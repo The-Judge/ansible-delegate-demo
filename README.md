@@ -96,7 +96,7 @@ First execution at 19:30:40 CET:
     /Users/mrichter/Desktop/ansible-delegate-demo
     ansible-delegate-demo $ ansible-playbook playbooks/test.yml -vv
 
-Next execution immediately afterfawards with no code- or network 
+Next execution immediately afterwards with no code- or network 
 changes at 19:30:45 CET:
 
     (base) [last: 4s] [exit: 0] mrichter 19:30:40 (CET) Tue 2022-11-22
