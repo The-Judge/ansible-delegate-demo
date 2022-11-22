@@ -1,0 +1,9 @@
+---
+- name: Test Playbook
+  hosts:
+    - sbsdevcore
+  become: true
+
+  roles:
+    - role: test
+...

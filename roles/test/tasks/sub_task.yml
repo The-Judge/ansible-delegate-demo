@@ -1,0 +1,11 @@
+---
+- debug:
+    msg: "my_execution_node: {{ my_execution_node }}"
+
+- name: This is my sub-task
+  shell:
+    cmd: echo "Hello World!"
+  run_once: true
+  delegate_to: "{{ my_execution_node }}"
+  delegate_facts: true
+...

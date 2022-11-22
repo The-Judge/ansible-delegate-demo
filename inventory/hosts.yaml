@@ -1,0 +1,10 @@
+---
+all:
+  children:
+
+    sbsdevcore:
+      hosts:
+        sbsdevcore01:
+        sbsdevcore02:
+        sbsdevcore03:
+...

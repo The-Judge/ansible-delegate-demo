@@ -1,0 +1,12 @@
+---
+- debug:
+    msg: "my_group_name: {{ my_group_name }}"
+
+- debug:
+    msg: "{{ groups[my_group_name] }}"
+
+- name: Main Level Task
+  include_tasks: sub_task.yml
+  vars:
+    my_execution_node: "{{ groups[my_group_name] | random }}"
+...
