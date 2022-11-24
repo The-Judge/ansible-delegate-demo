@@ -8,5 +8,8 @@
 - name: Main Level Task
   include_tasks: sub_task.yml
   vars:
+    # Breaks
     my_execution_node: "{{ groups[my_group_name] | random }}"
+    # Works
+    #my_execution_node: "{{ groups[my_group_name] | first }}"
 ...
