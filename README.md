@@ -1,3 +1,7 @@
+See https://github.com/ansible/ansible/issues/79450 for details on this repo.
+
+----
+
 First execution at 19:30:40 CET:
 
     ansible-delegate-demo $ ansible-playbook playbooks/test.yml -vv
