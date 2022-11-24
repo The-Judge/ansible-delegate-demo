@@ -5,6 +5,14 @@
 - debug:
     msg: "{{ groups[my_group_name] }}"
 
+- name: get random element from groups[my_group_name]
+  include_tasks: get_random_element.yml
+  vars:
+    list: "{{ groups[my_group_name] }}"
+
+- debug:
+    msg: "{{ elem }}"
+
 - name: Main Level Task
   include_tasks: sub_task.yml
   vars:
@@ -12,4 +20,6 @@
     my_execution_node: "{{ groups[my_group_name] | random }}"
     # Works
     #my_execution_node: "{{ groups[my_group_name] | first }}"
+    # Works
+    #my_execution_node: "{{ elem }}"
 ...

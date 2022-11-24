@@ -1,0 +1,5 @@
+---
+- name: take 'list' and return a single element from it 'elem'
+  set_fact:
+    elem: "{{ list|random }}"
+...
